@@ -1,0 +1,104 @@
+/* ***** Root start ***** */
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --light__black: #323232;
+    --whitesmoke: #F1F1F1;
+    --gray: #E1E1E1;
+}
+
+/* ***** Root end ***** */
+
+.news {
+    margin-top: 100px;
+    margin-bottom: 116px;
+}
+
+.news-group {
+    position: relative;
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: 255px 100px 255px;
+    gap: 30px;
+    margin-top: 103px;
+}
+
+.news-group__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.50) 100%);
+}
+.news-group__block:nth-of-type(6n + 1) {
+    grid-column: span 2;
+    grid-row: span 2;
+    min-height: 360px;
+}
+.news-group__block:nth-of-type(6n + 4) {
+    grid-column: span 2;
+    grid-row: span 2;
+    min-height: 360px;
+}
+
+.news-block__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.news-block__advice {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px 30px;
+    background: var(--white);
+    color: var(--light__black);
+    border-radius: 8px;
+}
+
+.news-block__title {
+    color: var(--white);
+    font-family: var(--MB);
+    font-size: 22px;
+    line-height: 27px;
+    font-variant: all-small-caps;
+    max-width: 452px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news-block__text {
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 22px;
+    font-variant: all-small-caps;
+    max-width: 409px;
+    width: 100%;
+}
+
+.news-block__date {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.news-block__icon {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.news-block__time {
+    margin-left: 10px;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
